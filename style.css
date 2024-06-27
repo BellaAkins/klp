@@ -92,7 +92,7 @@ header .hero {
   align-items: center;
   color: #fff;
   align-items: center;
-  gap: 25px;
+  gap: 35px;
   text-align: center;
 }
 header .hero h1 {
@@ -293,6 +293,7 @@ header .hero .cta-buttons #all-tracks {
     line-height: 20.5px;
     text-align: center;
     padding: 0px 5px;
+    
     width: 350px;
     color: #4b5d68;
   }
