@@ -277,8 +277,7 @@ header .hero .cta-buttons #all-tracks {
   body header .hero h1 {
     font-size: 4rem;
     width: 300px;
-    line-height: 0px;
-    letter-spacing: -0.025em;
+   
   }
   body header .hero p {
     font-family: Mulish;
