@@ -208,7 +208,7 @@ header .hero .cta-buttons #all-tracks {
   margin: 0 auto;
 }
 .about .about-box-container .about-box:hover {
-  transform: scale();
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 680px) {
