@@ -31,7 +31,7 @@ header {
   align-items: center;
   height: 100vh;
   box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.0509803922);
-  gap: 30px;
+  gap: 30em;
 }
 header .logo img {
   width: 128px;
