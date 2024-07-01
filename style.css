@@ -4,9 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
   list-style: none;
-  font-family: prompt, sans-serif;
+  font-family: poppins, sans-serif;
+  scroll-behavior: smooth;
+}
+* a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 body {
@@ -30,15 +34,15 @@ header {
   height: 100vh;
   box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.0509803922);
 }
-header .logo {
-  margin-left: 30px;
+header .logo img {
+  width: 128px;
 }
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  padding: 7px;
+  padding: 12px;
   margin: 20px;
   top: 0;
   right: 0;
@@ -53,7 +57,7 @@ header nav ul {
 }
 header nav ul a {
   color: #4b5d68;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
 }
@@ -72,15 +76,19 @@ header nav ul a:hover::after {
   width: 100%;
 }
 header nav ul .hero-cta {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
   background: purple;
   display: flex;
   background: #ccac00;
   color: #212353;
-  padding: 16px 50px;
+  padding: 16px 18px;
   gap: 8px;
   border-radius: 20px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
 }
 header nav ul .hero-cta:hover {
   background: transparent;
@@ -92,13 +100,13 @@ header .hero {
   align-items: center;
   color: #fff;
   align-items: center;
-  gap: 35px;
+  gap: 25px;
   text-align: center;
 }
 header .hero h1 {
   font-size: 6rem;
   font-weight: 700;
- 
+  line-height: 1.15;
   width: 706px;
   height: 174px;
   margin: 0 auto;
@@ -112,9 +120,8 @@ header .hero h1 span {
 header .hero p {
   font-family: Mulish;
   font-size: 1.313rem;
-  font-size: 15px;
   font-weight: 500;
-  line-height: 31.5px;
+  line-height: 1.15;
   text-align: center;
   width: 540px;
   color: #4b5d68;
@@ -124,7 +131,6 @@ header .hero .cta-buttons {
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
-  margin-top: 35px;
 }
 header .hero .cta-buttons a {
   display: flex;
@@ -132,7 +138,7 @@ header .hero .cta-buttons a {
   padding: 16px 50px;
   gap: 8px;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 header .hero .cta-buttons .get-started {
@@ -142,72 +148,117 @@ header .hero .cta-buttons .get-started:hover {
   background: transparent;
   border: 1px solid #ccac00;
 }
-header .hero .cta-buttons #all-tracks {
+header .hero .cta-buttons .all-tracks {
   background: transparent;
   border: 1px solid #ccac00;
 }
-.about .text h1 {
-  font-size: 38px;
+
+.about {
+  padding: 25px;
+}
+.about .about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about .about-container .text h1 {
+  font-size: 2.3rem;
   font-weight: 700;
-  line-height: 49.4px;
-   letter-spacing: -0.00125em;
+  line-height: 1.15;
   text-align: center;
   color: #212353;
+  padding: 5px;
 }
-.about img {
-  width: 50px;
-}
-.about .about-box-container {
+.about .about-container .about-box-container {
   display: flex;
   align-items: center;
   padding: 10px;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 50px;
-  gap: 30px 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
-.about .about-box-container .about-box {
+.about .about-container .about-box-container .about-box {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  width: 340px;
+  gap: 15px;
+  width: 300px;
   flex-grow: 1;
   box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.0509803922);
   padding: 20px;
   border-radius: 20px;
   border: 1px solid #e5f4f2;
-  margin-top: 20px;
-  gap: 15px;
 }
-.about .about-box-container .about-box img {
-  width: 70px;
+.about .about-container .about-box-container .about-box img {
   margin: 0 auto;
 }
-.about .about-box-container .about-box .about-text {
+.about .about-container .about-box-container .about-box .about-text {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px 15px;
   text-align: center;
 }
-.about .about-box-container .about-box .about-text h3 {
-  font-size: 28px;
+.about .about-container .about-box-container .about-box .about-text h3 {
+  font-size: 1.75rem;
   font-weight: 600;
-  line-height: 36.4px;
-  letter-spacing: -0.01em;
+  line-height: 1.15;
   color: #212353;
 }
-.about .about-box-container .about-box .about-text p {
+.about .about-container .about-box-container .about-box .about-text p {
   font-family: Mulish;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
   color: #4b5d68;
-  height: 120px;
+  background: #fff;
+}
+.about .about-container .about-box-container .about-box:hover {
+  transform: scale(1.1);
+}
+
+.all-tracks {
+  background: #6468a6;
+}
+.all-tracks .about-container .text h1 {
+  color: #fff;
+}
+.all-tracks .about-container .about-box-container .about-box {
+  background-color: #fff;
+}
+.all-tracks .about-container .about-box-container .about-box .about-text a {
+  display: flex;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+  color: #212353;
   margin: 0 auto;
 }
-.about .about-box-container .about-box:hover {
-  transform: scale(1.1);
+.all-tracks
+  .about-container
+  .about-box-container
+  .about-box
+  .about-text
+  .arrow {
+  width: 15px;
+}
+.all-tracks .about-container .explore-cta a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ccac00;
+  padding: 16px 30px;
+  gap: 8px;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #212353;
+  border-radius: 20px;
+  width: 215px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 680px) {
@@ -277,29 +328,13 @@ header .hero .cta-buttons #all-tracks {
   body header .hero h1 {
     font-size: 4rem;
     width: 300px;
-
-    font-weight: 500;
-    
-    text-align: center;
-    padding: 0px 5px;
-    width: 350px;
-   
+    line-height: 1.15;
   }
   body header .hero p {
-    font-family: Mulish;
-    font-size: 1.313rem;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 20.5px;
-    text-align: center;
-    padding: 0px 5px;
-    margin-top: 40px;
     width: 350px;
     color: #4b5d68;
   }
   body header .hero .cta-buttons {
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
   }
 } /*# sourceMappingURL=style.css.map */
