@@ -22,7 +22,9 @@ body .close,
 body .display {
   display: none;
 }
-
+body h1 {
+  font-size: 3rem;
+}
 
 header {
   display: flex;
@@ -31,7 +33,6 @@ header {
   align-items: center;
   height: 100vh;
   box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.0509803922);
-
 }
 header .logo img {
   width: 128px;
@@ -101,12 +102,12 @@ header .hero {
   align-items: center;
   gap: 25px;
   text-align: center;
+  flex-wrap: wrap;
 }
 header .hero h1 {
   font-size: 6rem;
   font-weight: 700;
   line-height: 1.15;
-
   margin: 0 auto;
   color: #212353;
   text-align: center;
@@ -122,7 +123,6 @@ header .hero p {
   line-height: 1.15;
   text-align: center;
   width: 540px;
-
   color: #4b5d68;
 }
 header .hero .cta-buttons {
@@ -140,12 +140,12 @@ header .hero .cta-buttons a {
   font-size: 1rem;
   font-weight: 600;
 }
+header .hero .cta-buttons a:hover {
+  background: #6468a6;
+  color: #fff;
+}
 header .hero .cta-buttons .get-started {
   background: #ccac00;
-}
-header .hero .cta-buttons .get-started:hover {
-  background: transparent;
-  border: 1px solid #ccac00;
 }
 header .hero .cta-buttons .all-tracks {
   background: transparent;
@@ -234,12 +234,7 @@ header .hero .cta-buttons .all-tracks {
   color: #212353;
   margin: 0 auto;
 }
-.all-tracks
-  .about-container
-  .about-box-container
-  .about-box
-  .about-text
-  .arrow {
+.all-tracks .about-container .about-box-container .about-box .about-text .arrow {
   width: 15px;
 }
 .all-tracks .about-container .explore-cta a {
@@ -258,6 +253,165 @@ header .hero .cta-buttons .all-tracks {
   border-radius: 20px;
   width: 215px;
   margin: 0 auto;
+}
+
+.community {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.community .community-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: center;
+  padding: 50px 40px;
+}
+.community .community-text h3 {
+  font-family: Poppins;
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  color: #212353;
+}
+.community .community-text p {
+  background: #fff;
+  font-size: 2.1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  color: #4b5d68;
+}
+.community .story {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: #6468a6;
+  padding: 50px;
+}
+.community .story h2 {
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+.community .story .story-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+.community .story .story-container .story-box {
+  background: #fff;
+  border: 1px solid #e5f4f2;
+  box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.0509803922);
+  border-radius: 20px;
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.community .story .story-container .story-box .story-details {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 18px;
+}
+.community .story .story-container .story-box .story-details img {
+  width: 40px;
+}
+.community .story .story-container .story-box .story-details .story-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.community .story .story-container .story-box .story-details .story-text h3 {
+  font-size: 1.3rempx;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #111827;
+}
+.community .story .story-container .story-box .story-details .story-text p {
+  font-family: Mulish;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #ccac00;
+}
+.community .story .story-container .story-box .ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+.community .story .story-container .story-box .ratings .stars img {
+  width: 20px;
+}
+.community .story .story-container .story-box .ratings p {
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  color: #2d2d2d;
+}
+
+.support {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding: 50px 40px;
+}
+.support h3 {
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #212353;
+}
+.support p {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #4b5d68;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.support .support-cta {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.support .support-cta a {
+  display: flex;
+  color: #212353;
+  padding: 16px 50px;
+  gap: 8px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.support .support-cta a:hover {
+  background: #6468a6;
+  color: #fff;
+}
+.support .support-cta .learn-more {
+  background: transparent;
+  border: 1px solid #ccac00;
+}
+.support .support-cta .donate {
+  background: #ccac00;
 }
 
 @media only screen and (max-width: 680px) {
@@ -326,8 +480,7 @@ header .hero .cta-buttons .all-tracks {
   }
   body header .hero h1 {
     font-size: 4rem;
-    
-    line-height: 1.15;
+    width: 300px;
   }
   body header .hero p {
     width: 350px;
@@ -336,4 +489,7 @@ header .hero .cta-buttons .all-tracks {
   body header .hero .cta-buttons {
     flex-direction: column;
   }
-} /*# sourceMappingURL=style.css.map */
+  body .community .story .story-container .story-box {
+    width: 270px;
+  }
+}/*# sourceMappingURL=style.css.map */
