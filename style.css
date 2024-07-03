@@ -324,8 +324,8 @@ header .hero .cta-buttons .all-tracks {
 .community .story .story-container .story-box .story-details {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  padding: 18px;
+  width: 380px;
+  padding: 30px;
 }
 .community .story .story-container .story-box .story-details img {
   width: 40px;
@@ -336,7 +336,7 @@ header .hero .cta-buttons .all-tracks {
   gap: 10px;
 }
 .community .story .story-container .story-box .story-details .story-text h3 {
-  font-size: 1.3rempx;
+  font-size: 1.3rem;
   font-weight: 600;
   line-height: 1.15;
   color: #111827;
