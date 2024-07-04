@@ -28,7 +28,7 @@ body {
     font-size: 3rem;
   }
 }
-
+//header
 header {
   display: flex;
   flex-direction: column;
@@ -174,7 +174,7 @@ header {
     }
   }
 }
-
+//About
 .about {
   padding: 25px;
 
@@ -492,6 +492,104 @@ header {
     .donate {
       background: #ccac00;
     }
+  }
+}
+
+footer {
+  padding: 15px 10px;
+
+  // background: red;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; //takes it down
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    .footer-logo {
+      img {
+        width: 120px;
+      }
+    }
+    h3 {
+      max-width: 400px;
+      font-family: Mulish;
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: 1.15;
+      text-align: left;
+      color: #4b5d68;
+    }
+
+    .footer-icons {
+      img {
+        width: 35px;
+      }
+      display: flex;
+      gap: 18px;
+    }
+  }
+
+  .footer-links,
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    font-size: 0.85rem;
+    flex-grow: 1;
+
+    p {
+      color: #212353;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      a {
+        color: #4b5d68;
+        font-family: Mulish;
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 1.15;
+        text-align: left;
+
+        &:hover {
+          color: #6468a6;
+        }
+      }
+    }
+  }
+
+  hr {
+    background-color: #212353;
+    //color: #212353;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 1px;
+  }
+
+  .copyright {
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.15;
+
+    color: #212353;
+    margin-left: 150px;
+    margin-top: 30px;
   }
 }
 
