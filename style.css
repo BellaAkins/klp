@@ -414,6 +414,88 @@ header .hero .cta-buttons .all-tracks {
   background: #ccac00;
 }
 
+footer {
+  padding: 15px 10px;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+footer .footer-content .footer-logo img {
+  width: 120px;
+}
+footer .footer-content h3 {
+  max-width: 400px;
+  font-family: Mulish;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.15;
+  text-align: left;
+  color: #4b5d68;
+}
+footer .footer-content .footer-icons {
+  display: flex;
+  gap: 18px;
+}
+footer .footer-content .footer-icons img {
+  width: 35px;
+}
+footer .footer-links,
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  font-size: 0.85rem;
+  flex-grow: 1;
+}
+footer .footer-links p,
+footer .footer-content p {
+  color: #212353;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer ul li a {
+  color: #4b5d68;
+  font-family: Mulish;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.15;
+  text-align: left;
+}
+footer ul li a:hover {
+  color: #6468a6;
+}
+footer hr {
+  background-color: #212353;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 1px;
+}
+footer .copyright {
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #212353;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
 @media only screen and (max-width: 680px) {
   body .menu,
   body .close {
