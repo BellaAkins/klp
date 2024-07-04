@@ -17,13 +17,11 @@ body {
   position: relative;
   background: #fff;
 }
-body .menu,
-body .close,
-body .display {
+
+.menu,
+.close,
+.display {
   display: none;
-}
-body h1 {
-  font-size: 3rem;
 }
 
 header {
@@ -37,7 +35,8 @@ header {
 header .logo img {
   width: 128px;
 }
-header nav {
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,22 +48,22 @@ header nav {
   left: 0;
   flex-wrap: wrap;
 }
-header nav ul {
+nav ul {
   display: flex;
   align-items: center;
   gap: 10px 32px;
   flex-wrap: wrap;
 }
-header nav ul a {
+nav ul a {
   color: #4b5d68;
   font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
 }
-header nav ul a:hover {
+nav ul a:hover {
   color: #ccac00;
 }
-header nav ul a::after {
+nav ul a::after {
   content: "";
   width: 0;
   height: 2px;
@@ -72,10 +71,10 @@ header nav ul a::after {
   display: block;
   transition: 0.2s linear;
 }
-header nav ul a:hover::after {
+nav ul a:hover::after {
   width: 100%;
 }
-header nav ul .hero-cta {
+nav ul .hero-cta {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
@@ -90,11 +89,12 @@ header nav ul .hero-cta {
   font-weight: 600;
   font-size: 1rem;
 }
-header nav ul .hero-cta:hover {
+nav ul .hero-cta:hover {
   background: transparent;
   border: 1px solid #ccac00;
 }
-header .hero {
+
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +104,7 @@ header .hero {
   text-align: center;
   flex-wrap: wrap;
 }
-header .hero h1 {
+.hero h1 {
   font-size: 6rem;
   font-weight: 700;
   line-height: 1.15;
@@ -113,10 +113,10 @@ header .hero h1 {
   text-align: center;
   padding: 0px 5px;
 }
-header .hero h1 span {
+.hero h1 span {
   color: #6468a6;
 }
-header .hero p {
+.hero p {
   font-family: Mulish;
   font-size: 1.313rem;
   font-weight: 500;
@@ -125,13 +125,14 @@ header .hero p {
   width: 540px;
   color: #4b5d68;
 }
-header .hero .cta-buttons {
+
+.cta-buttons {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
 }
-header .hero .cta-buttons a {
+.cta-buttons a {
   display: flex;
   color: #212353;
   padding: 16px 50px;
@@ -140,14 +141,14 @@ header .hero .cta-buttons a {
   font-size: 1rem;
   font-weight: 600;
 }
-header .hero .cta-buttons a:hover {
+.cta-buttons a:hover {
   background: #6468a6;
   color: #fff;
 }
-header .hero .cta-buttons .get-started {
+.cta-buttons .get-started {
   background: #ccac00;
 }
-header .hero .cta-buttons .all-tracks {
+.cta-buttons .all-tracks {
   background: transparent;
   border: 1px solid #ccac00;
 }
@@ -155,12 +156,13 @@ header .hero .cta-buttons .all-tracks {
 .about {
   padding: 25px;
 }
-.about .about-container {
+
+.about-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.about .about-container .text h1 {
+.about-container .text h1 {
   font-size: 2.3rem;
   font-weight: 700;
   line-height: 1.15;
@@ -168,7 +170,8 @@ header .hero .cta-buttons .all-tracks {
   color: #212353;
   padding: 5px;
 }
-.about .about-container .about-box-container {
+
+.about-box-container {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -177,7 +180,8 @@ header .hero .cta-buttons .all-tracks {
   gap: 30px;
   flex-wrap: wrap;
 }
-.about .about-container .about-box-container .about-box {
+
+.about-box {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -188,31 +192,32 @@ header .hero .cta-buttons .all-tracks {
   border-radius: 20px;
   border: 1px solid #e5f4f2;
 }
-.about .about-container .about-box-container .about-box img {
+.about-box img {
   margin: 0 auto;
 }
-.about .about-container .about-box-container .about-box .about-text {
+.about-box:hover {
+  transform: scale(1.1);
+}
+
+.about-text {
   display: flex;
   flex-direction: column;
   gap: 20px 15px;
   text-align: center;
 }
-.about .about-container .about-box-container .about-box .about-text h3 {
+.about-text h3 {
   font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.15;
   color: #212353;
 }
-.about .about-container .about-box-container .about-box .about-text p {
+.about-text p {
   font-family: Mulish;
   font-size: 1.35rem;
   font-weight: 400;
   line-height: 1.15;
   color: #4b5d68;
   background: #fff;
-}
-.about .about-container .about-box-container .about-box:hover {
-  transform: scale(1.1);
 }
 
 .all-tracks {
@@ -221,10 +226,10 @@ header .hero .cta-buttons .all-tracks {
 .all-tracks .about-container .text h1 {
   color: #fff;
 }
-.all-tracks .about-container .about-box-container .about-box {
+.all-tracks .about-box {
   background-color: #fff;
 }
-.all-tracks .about-container .about-box-container .about-box .about-text a {
+.all-tracks .about-text a {
   display: flex;
   gap: 8px;
   font-size: 1rem;
@@ -234,10 +239,12 @@ header .hero .cta-buttons .all-tracks {
   color: #212353;
   margin: 0 auto;
 }
-.all-tracks .about-container .about-box-container .about-box .about-text .arrow {
+
+.arrow {
   width: 15px;
 }
-.all-tracks .about-container .explore-cta a {
+
+.explore-cta a {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -260,7 +267,8 @@ header .hero .cta-buttons .all-tracks {
   flex-direction: column;
   gap: 40px;
 }
-.community .community-text {
+
+.community-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -270,7 +278,7 @@ header .hero .cta-buttons .all-tracks {
   text-align: center;
   padding: 50px 40px;
 }
-.community .community-text h3 {
+.community-text h3 {
   font-family: Poppins;
   font-size: 2.375rem;
   font-weight: 700;
@@ -278,21 +286,22 @@ header .hero .cta-buttons .all-tracks {
   text-align: center;
   color: #212353;
 }
-.community .community-text p {
+.community-text p {
   background: #fff;
   font-size: 2.1rem;
   max-width: 1280px;
   margin: 0 auto;
   color: #4b5d68;
 }
-.community .story {
+
+.story {
   display: flex;
   flex-direction: column;
   gap: 30px;
   background: #6468a6;
   padding: 50px;
 }
-.community .story h2 {
+.story h2 {
   font-size: 2.375rem;
   font-weight: 700;
   line-height: 1.15;
@@ -300,7 +309,8 @@ header .hero .cta-buttons .all-tracks {
   color: #fff;
   padding: 20px;
 }
-.community .story .story-container {
+
+.story-container {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -308,9 +318,10 @@ header .hero .cta-buttons .all-tracks {
   margin: 0 auto;
   gap: 30px;
   flex-wrap: wrap;
-  overflow: auto;
+  overflow-y: auto;
 }
-.community .story .story-container .story-box {
+
+.story-box {
   background: #fff;
   border: 1px solid #e5f4f2;
   box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.0509803922);
@@ -321,43 +332,46 @@ header .hero .cta-buttons .all-tracks {
   flex-grow: 1;
   flex-shrink: 0;
 }
-.community .story .story-container .story-box .story-details {
+
+.story-details {
   display: flex;
   flex-direction: column;
   width: 380px;
   padding: 30px;
 }
-.community .story .story-container .story-box .story-details img {
+.story-details img {
   width: 40px;
 }
-.community .story .story-container .story-box .story-details .story-text {
+
+.story-text {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.community .story .story-container .story-box .story-details .story-text h3 {
+.story-text h3 {
   font-size: 1.3rem;
   font-weight: 600;
   line-height: 1.15;
   color: #111827;
 }
-.community .story .story-container .story-box .story-details .story-text p {
+.story-text p {
   font-family: Mulish;
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1.15;
   color: #ccac00;
 }
-.community .story .story-container .story-box .ratings {
+
+.ratings {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 10px;
 }
-.community .story .story-container .story-box .ratings .stars img {
+.ratings .stars img {
   width: 20px;
 }
-.community .story .story-container .story-box .ratings p {
+.ratings p {
   font-family: Mulish;
   font-size: 1rem;
   font-weight: 400;
@@ -387,13 +401,14 @@ header .hero .cta-buttons .all-tracks {
   max-width: 1280px;
   margin: 0 auto;
 }
-.support .support-cta {
+
+.support-cta {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
 }
-.support .support-cta a {
+.support-cta a {
   display: flex;
   color: #212353;
   padding: 16px 50px;
@@ -402,22 +417,23 @@ header .hero .cta-buttons .all-tracks {
   font-size: 1rem;
   font-weight: 600;
 }
-.support .support-cta a:hover {
+.support-cta a:hover {
   background: #6468a6;
   color: #fff;
 }
-.support .support-cta .learn-more {
+.support-cta .learn-more {
   background: transparent;
   border: 1px solid #ccac00;
 }
-.support .support-cta .donate {
+.support-cta .donate {
   background: #ccac00;
 }
 
 footer {
   padding: 15px 10px;
 }
-footer .footer-container {
+
+.footer-container {
   display: flex;
   justify-content: space-between;
   padding: 32px 0;
@@ -426,15 +442,13 @@ footer .footer-container {
   margin: 0 auto;
   flex-wrap: wrap;
 }
-footer .footer-content {
+
+.footer-content {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-footer .footer-content .footer-logo img {
-  width: 120px;
-}
-footer .footer-content h3 {
+.footer-content h3 {
   max-width: 400px;
   font-family: Mulish;
   font-size: 1.3rem;
@@ -443,27 +457,34 @@ footer .footer-content h3 {
   text-align: left;
   color: #4b5d68;
 }
-footer .footer-content .footer-icons {
+
+.footer-logo img {
+  width: 120px;
+}
+
+.footer-icons {
   display: flex;
   gap: 18px;
 }
-footer .footer-content .footer-icons img {
+.footer-icons img {
   width: 35px;
 }
-footer .footer-links,
-footer .footer-content {
+
+.footer-links,
+.footer-content {
   display: flex;
   flex-direction: column;
   gap: 22px;
   font-size: 0.85rem;
   flex-grow: 1;
 }
-footer .footer-links p,
-footer .footer-content p {
+.footer-links p,
+.footer-content p {
   color: #212353;
   font-size: 1.3rem;
   font-weight: 600;
 }
+
 footer ul {
   display: flex;
   flex-direction: column;
@@ -480,13 +501,15 @@ footer ul li a {
 footer ul li a:hover {
   color: #6468a6;
 }
-footer hr {
+
+hr {
   background-color: #212353;
   max-width: 1200px;
   margin: 0 auto;
   height: 1px;
 }
-footer .copyright {
+
+.copyright {
   font-family: Mulish;
   font-size: 1rem;
   font-weight: 400;
@@ -497,16 +520,16 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 680px) {
-  body .menu,
-  body .close {
+  .menu,
+  .close {
     display: block;
     width: 30px;
     cursor: pointer;
   }
-  body header .logo {
+  header .logo {
     margin: 0;
   }
-  body header .navigation {
+  .navigation {
     display: none;
     position: absolute;
     background: #212353;
@@ -516,16 +539,16 @@ footer .copyright {
     height: 100vh;
     z-index: 1;
   }
-  body header .navigation ul {
+  .navigation ul {
     margin-top: 90px;
     padding: 0;
   }
-  body header .navigation a {
+  .navigation a {
     padding: 16px 32px;
     display: block;
     font-size: 1.4rem;
   }
-  body header .navigation .hero-cta {
+  .navigation .hero-cta {
     background: none;
     color: #4b5d68;
     font-size: 1.4rem;
@@ -536,14 +559,14 @@ footer .copyright {
     display: block;
     font-size: 1.4rem;
   }
-  body header .navigation .hero-cta img {
+  .navigation .hero-cta img {
     display: none;
   }
-  body header .navigation .hero-cta:hover {
+  .navigation .hero-cta:hover {
     color: #ccac00;
     border: 0;
   }
-  body header .navigation .hero-cta::after {
+  .navigation .hero-cta::after {
     content: "";
     width: 0;
     height: 2px;
@@ -551,24 +574,24 @@ footer .copyright {
     display: block;
     transition: 0.2s linear;
   }
-  body header .navigation .hero-cta:hover::after {
+  .navigation .hero-cta:hover::after {
     width: 100%;
   }
-  body header .navigation .close {
+  .navigation .close {
     margin: 32px;
     position: absolute;
     right: 0;
     top: -13px;
   }
-  body header .hero h1 {
+  .hero h1 {
     font-size: 4rem;
     width: 300px;
   }
-  body header .hero p {
+  .hero p {
     width: 350px;
     color: #4b5d68;
   }
-  body header .hero .cta-buttons {
+  .hero .cta-buttons {
     flex-direction: column;
   }
-}/*# sourceMappingURL=style.css.map */
+}
