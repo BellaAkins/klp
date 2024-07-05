@@ -317,8 +317,7 @@ nav ul .hero-cta:hover {
   max-width: 1200px;
   margin: 0 auto;
   gap: 30px;
-  flex-wrap: wrap;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .story-box {
@@ -327,7 +326,7 @@ nav ul .hero-cta:hover {
   box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.0509803922);
   border-radius: 20px;
   display: flex;
-  width: 300px;
+  width: 375px;
   margin: 0 auto;
   flex-grow: 1;
   flex-shrink: 0;
@@ -378,6 +377,13 @@ nav ul .hero-cta:hover {
   line-height: 1.5;
   text-align: left;
   color: #2d2d2d;
+}
+
+.story-container.dragging .story-box {
+  cursor: grab;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .support {
@@ -593,5 +599,11 @@ hr {
   }
   .hero .cta-buttons {
     flex-direction: column;
+  }
+  .story-container {
+    flex-wrap: wrap;
+  }
+  .story-box {
+    width: 300px;
   }
 }
